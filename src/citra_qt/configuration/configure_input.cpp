@@ -9,6 +9,7 @@
 #include <QMenu>
 #include <QMessageBox>
 #include <QTimer>
+#include <QFileInfo>
 #include "citra_qt/configuration/config.h"
 #include "citra_qt/configuration/configure_input.h"
 #include "citra_qt/configuration/configure_motion_touch.h"
