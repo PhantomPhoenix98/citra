@@ -400,6 +400,9 @@ void ConfigureInput::NewProfile() {
     if (name.isEmpty()) {
         return;
     }
+    if (QFileInfo::exists(QString::fromStdString(name.toStdString()+".ini"))){
+    return;
+    }
     applyConfiguration();
     Settings::SaveProfile(ui->profile->currentIndex());
     Settings::CreateProfile(name.toStdString());
